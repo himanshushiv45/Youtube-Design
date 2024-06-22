@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container-fluid {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+
+.aside {
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  width: 18%;
+  height: 100vh;
+  padding: 12px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.aside #icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 6px 10px;
+}
+.aside #icons:hover {
+  background-color: burlywood;
+}
+.menu {
+  display: flex;
+  gap: 18px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 10px;
+  margin-bottom: 15px;
+}
+
+/* ------main-container------- */
+
+.main-container {
+  width: 100%;
+}
+
+/* ------navbar-------- */
+.nav {
+  /* position: fixed;
+  top: 0; */
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.center,
+.inp {
+  width: 520px;
+  border: 1px solid rgb(185, 182, 182);
+  border-radius: 20px;
+}
+#search {
+  width: 90%;
+  padding: 8px 14px;
+  background: transparent;
+  border: none;
+  border-right: 1px solid gray;
+  outline: none;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+.fa-microphone {
+  margin-left: 12px;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+  padding: 8px 14px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 36px;
+}
+
+/* ---Tags--- */
+.tags {
+  padding: 10px;
+  /* position: fixed;
+  top: 120;
+  left: 0; 
+  width: 100vw;*/
+}
+.tags > span {
+  padding: 6px 14px;
+  background: #828080;
+  color: #fff;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+.tags > span:hover {
+  background: #7f7f7f;
+}
+
+/* -----main------ */
+main {
+  height: 100vh;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,400px);
+
+  gap: 12px;
+  padding: 5px 25px;
+}
+.card {
+  max-width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.avatar-content {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.avatar {
+  font-size: 30px;
+  color: #4d4d4d;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.content h4 {
+  font-size: 16px;
+}
+.content p {
+  font-size: 13px;
+}
+.dot {
+  font-size: 18px;
+}
